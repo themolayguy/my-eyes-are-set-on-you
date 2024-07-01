@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My eyes are set on you</title>
+  <link rel="stylesheet" href="yeah.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="yeah">
+    <a href="https://www.roblox.com/" id="dominique_logo">Domi</a>
+    <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="https://open.spotify.com/track/2p9Ac0KQAUfOIXXWAxlzmM?si=ab6d90b2b4f64584" class="navbar__link" target="_blank">Click me, Nikkie</a>
+      </li>
+      <li class="navbar__btn">
+        <a href="https://open.spotify.com/track/755gQFe8AygwKePVjrMDoj?si=6314a253a44149cb" class="button" target="_blank">Click me, Nikki</a>
+      </li>
+      <li class="navbar__item">
+        <a href="https://open.spotify.com/track/1g6aK9HzKkbbQ2RpqtUyvL?si=d3111a7c3dbe4481" class="navbar__link" target="_blank">Click me, Nique</a>
+      </li>
+      <li class="navbar__btn">
+        <a href="https://open.spotify.com/track/1lGxw1hH4hYVXYVsBBQjHH?si=9636e83a4dbf4003" class="button" target="_blank">Click me, Dominikie :></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="content">
+  <div class="container">
+    <div class="decorative-left"></div>
+    <div class="decorative-right"></div>
+    <div class="content-wrapper">
+      <div class="subtext">
+        <h2>Who exactly is <u>Dominique Domingo Toledo</u>?</h2>
+        <p class="favorites">Miss Toledo is difficult to thoroughly describe, but I'll start with a simple "Beautiful".
+          To be entirely honest, gorgeous would be an understatement. How can person hold so much beauty and yet have so much heart.
+          True, she embodies the very essence of beauty , though its merely not just her exterior that labels her as such.
+        The way she moves. The way she talks. The way she acts. The way that she <u>is</u>, truly model her as beautiful.
+        An interior like no other, a fun demeanor and a pretty voice, you'd cherish forever. A person so passionate in tandem with so much compassion
+        that you just can't help but be amazed. Dominique is important to some. Dominique is special to most.
+        Though to me, She's Everything.
+    
+      
+
+         
+        </p>
+      </div>
+      <div class="image-gallery">
+        <div class="image-item">
+          <img src="estupid (1).png" alt="Image 1">
+          <div class="image-overlay">
+            <div class="overlay-text">
+              <p>She's an artist. A designer like no other.</p>
+            </div>
+          </div>
+        </div>
+        <div class="image-item">
+          <img src="0FD99623-7EDF-4503-B282-B6DCB5336F0B.jpg" alt="Image 2">
+          <div class="image-overlay">
+            <div class="overlay-text">
+              <p>She's a weirdo that leaves your heart aflutter.</p>
+            </div>
+          </div>
+        </div>
+        <div class="image-item">
+          <img src="pictures/IMG_8426.JPG" alt="Image 3">
+          <div class="image-overlay">
+            <div class="overlay-text">
+              <p>She's a musician, a hero, a princess. And most of all, a monkey.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navbarMenu = document.querySelector('.navbar__menu');
+  const links = document.querySelectorAll('.navbar__link, .button');
+
+  mobileMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+    navbarMenu.classList.toggle('active');
+  });
+
+  links.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const url = link.getAttribute('href');
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = url;
+      }, 500); // Match this duration with the CSS transition duration
+    });
+  });
+</script>
+</body>
+</html>
